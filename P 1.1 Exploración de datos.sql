@@ -23,7 +23,7 @@ order by 1,2
 
 
 
---En esta parte muestra el porcentaje de población que tiene Covid-19, Mexico en su punto mayor llegaba al 1.81%
+--En esta parte muestra el porcentaje de poblaciÃ³n que tiene Covid-19, Mexico en su punto mayor llegaba al 1.81%
 
 Select Location, date, Population, total_cases,  (total_cases/population)*100 as PercentPopulationInfected
 From Proyecto1..CovidDeaths
@@ -48,7 +48,7 @@ Group by continent
 order by TotalDeathCount desc
 
 
---Cifras por país. Lo preocupante es que Mexico tuvo uno de las cifras mas altas del mundo ocupando el numero #9 en el total (A), y el numero #1 en el total (B). 
+--Cifras por paÃ­s. Lo preocupante es que Mexico tuvo uno de las cifras mas altas del mundo ocupando el numero #9 en el total (A), y el numero #1 en el total (B). 
 
 --(A)
 Select location, MAX(cast(Total_deaths as int)) as TotalDeathCount
