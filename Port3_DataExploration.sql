@@ -1,0 +1,86 @@
+
+-- Amount of Laps Completed by each driver (number
+
+SELECT DRIVER, COUNT(LAP) as Laps_Completed
+FROM Portfolio3.dbo.LapData
+GROUP BY DRIVER
+ORDER BY Laps_Completed DESC
+
+
+
+-- Drivers that finished the race on the lead lap (Lap 71) AKA drivers that were not lapped
+
+SELECT DRIVER, LAP
+FROM Portfolio3.dbo.LapData
+WHERE LAP = 71
+
+
+
+-- INNER JOIN Drivers table and 2022 Mexican Gran Prix Results
+
+SELECT DriverNames.Nombre , DriverNames.Nacionalidad, COUNT(LapData.LAP) AS Laps_Completed
+FROM Portfolio3.dbo.LapData
+INNER JOIN DriverNames ON LapData.DRIVER=DriverNames.Corredor
+GROUP BY DriverNames.Nombre , DriverNames.Nacionalidad
+ORDER BY Laps_Completed DESC
+
+
+
+-- SUM , INNER JOIN Teams that completed the most laps
+
+SELECT DriverNames.Constructor , COUNT(LapData.LAP) AS Laps_Completed_By_Team
+FROM Portfolio3.dbo.LapData
+INNER JOIN DriverNames ON LapData.DRIVER=DriverNames.Corredor
+GROUP BY DriverNames.Constructor
+ORDER BY Laps_Completed_By_Team DESC
+
+
+
+-- FINISHING ORDER: Total Race time for each competitor, with amount of laps completed
+
+SELECT
+DRIVER,
+SUM(Minutes) AS Total_Minutes,
+SUM(Seconds) AS Total_Seconds,
+round((SUM((Minutes*60000) + (Seconds*1000)+(Milliseconds)) / 60000),3) as Race_Time_In_Minutes,
+COUNT(LAP) as Laps_Completed
+
+FROM Portfolio3.dbo.LapData
+
+WHERE DRIVER IS NOT NULL
+
+GROUP BY DRIVER
+
+ORDER BY Laps_Completed DESC, Race_Time_In_Minutes ASC
+
+
+
+
+-- RACE STANDINGS: Driver Name and Number, Constructor, and final race time + laps completed
+
+SELECT
+DRIVER as Race_Number,
+DriverNames.Nombre as Driver_Name,
+DriverNames.Nacionalidad as Nationality,
+DriverNames.Constructor,
+round((SUM((Minutes*60000) + (Seconds*1000)+(Milliseconds)) / 60000),3) as Race_Time_In_Minutes,
+COUNT(LAP) as Laps_Completed
+
+FROM Portfolio3.dbo.LapData
+INNER JOIN DriverNames ON LapData.DRIVER=DriverNames.Corredor
+
+WHERE DRIVER IS NOT NULL
+
+GROUP BY DRIVER , DriverNames.Nombre, DriverNames.Nacionalidad, DriverNames.Constructor
+
+ORDER BY Laps_Completed DESC, Race_Time_In_Minutes ASC
+
+
+
+-- Constructors that completed the most amount of laps
+
+SELECT DriverNames.Constructor , COUNT(LapData.LAP) AS Laps_Completed
+FROM Portfolio3.dbo.LapData
+INNER JOIN DriverNames ON LapData.DRIVER=DriverNames.Corredor
+GROUP BY DriverNames.Constructor
+ORDER BY Laps_Completed DESC
