@@ -1,5 +1,5 @@
 
--- Amount of Laps Completed by each driver (number
+-- Amount of Laps Completed by each driver (number)
 
 SELECT DRIVER, COUNT(LAP) as Laps_Completed
 FROM Portfolio3.dbo.LapData
