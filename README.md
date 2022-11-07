@@ -1,11 +1,12 @@
 # ProyectosPortfolio
 
-En las siguientes carpetas encontrarás información de trabajo en SQL y Tableau.
+Aqui puedes encontrar información de trabajos realizados en SQL y Tableau.
 
--- La siguiente data se limpió, se exploró, y luego se trabajó para crear una visualización en Tableau.
+-- La siguiente data se limpió, se exploró, y luego se trabajó para crear una visualización en Tableau:
 
-la secuencia de trabajo va:
 
-1.- Proyecto 1 Data Exploration.sql
+Proyecto 1: Cifras de Vacunación / Muertes de Covid-19
 
-2.- Tableau Data Viz
+Proyecto 2: Cantidad de Inmuebles en Oferta 2020-2022 en Guadalajara.
+
+Proyecto 3: Analisis de Lap Data del F1 Gran Premio de México 2022
