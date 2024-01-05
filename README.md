@@ -10,7 +10,7 @@ The folder Business Analysis contains independent financial visualizations in Sp
 
 The rest of the work in this Repository is the following:
 
-**Jupyter Notebook:** A Porfolio Allocator based on risk/return ratio in Python
+**Jupyter Notebook:** A Porfolio Allocator based on risk/return ratio in Python.
 
 **Project 1:** [Vaccination/Mortality rates Covid-19](https://github.com/MiguelArteaga0/ProyectosPortfolio/blob/main/Project%202:%20Exploraci%C3%B3n%20SQL%20Inmobiliaria.sql)  (*Español*)
  
@@ -24,11 +24,14 @@ The rest of the work in this Repository is the following:
 
 ## ~Spanish
 
-¡Hola! Mi nombre es Miguel Angel Arteaga y soy un analista de negocios de Guadalajara. En este repositorio puedes encontrar trabajos pasados mios en SQL y Tableau.
+¡Hola! Mi nombre es Miguel Angel Arteaga y soy un analista de negocios de Guadalajara. En este repositorio puedes encontrar trabajos pasados mios en SQL, Python y Tableau.
 
 La carpeta 'BusinessAnalysis contiene visualizaciones financieras en español :)
 
 El resto de los trabajos son:
+
+
+**Jupyter Notebook:** Un colocador de potafolio basado en un analisis riesgo/retorno en Python.
 
 **Proyecto 1:** [Cifras de Vacunación / Muertes de Covid-19](https://github.com/MiguelArteaga0/ProyectosPortfolio/blob/main/Project%202:%20Exploraci%C3%B3n%20SQL%20Inmobiliaria.sql) (*Español*)
 
