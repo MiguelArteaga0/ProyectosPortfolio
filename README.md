@@ -2,11 +2,15 @@ READ ME
 
 ## ~English
 
-Hello! I'm Miguel Arteaga, a business analyst from Mexico. Here you can find some of my previous SQL and Tableau work.
+Hello! I'm Miguel Arteaga, a financial data analyst from Mexico. Most projects are financial in nature as that is my background.
+
+ Here you can find some of my previous SQL, Python, and Tableau work.
 
 The folder Business Analysis contains independent financial visualizations in Spanish :)
 
-The rest of the work in this folder is the following:
+The rest of the work in this Repository is the following:
+
+**Jupyter Notebook:** A Porfolio Allocator based on risk/return ratio in Python
 
 **Project 1:** [Vaccination/Mortality rates Covid-19](https://github.com/MiguelArteaga0/ProyectosPortfolio/blob/main/Project%202:%20Exploraci%C3%B3n%20SQL%20Inmobiliaria.sql)  (*Español*)
  
